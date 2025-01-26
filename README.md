@@ -10,7 +10,7 @@ Proyek ini bertujuan untuk mengklasifikasikan tingkat kemiskinan di Indonesia be
 
 ## **Struktur Proyek**
 - `data/`: Berisi dataset yang digunakan untuk analisis.
-- `notebooks/`: Notebook Jupyter untuk eksplorasi data, pemrosesan, dan pelatihan model.
+- `notebooks/`: Visual Studio Code untuk eksplorasi data, pemrosesan, dan pelatihan model.
 - `results/`: Hasil evaluasi dan visualisasi, seperti confusion matrix dan plot pentingnya fitur.
 - `scripts/`: Skrip Python untuk pemrosesan data dan pelatihan model.
 
