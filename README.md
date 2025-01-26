@@ -37,5 +37,7 @@ Proyek ini bertujuan untuk mengklasifikasikan tingkat kemiskinan di Indonesia be
 - Model dapat memprediksi tingkat kemiskinan dengan baik, bahkan pada data yang tidak seimbang.
 - Visualisasi pentingnya fitur menunjukkan bahwa indikator seperti **rata-rata lama sekolah** dan **pengeluaran per kapita** memiliki kontribusi besar dalam klasifikasi.
 
+## **DATASET**
+Data set yang digunakan: https://www.kaggle.com/datasets/ermila/klasifikasi-tingkat-kemiskinan-di-indonesia
 
 
