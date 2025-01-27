@@ -1,43 +1,44 @@
-# Klasifikasi Tingkat Kemiskinan di Indonesia
-
-Proyek ini bertujuan untuk mengklasifikasikan tingkat kemiskinan di Indonesia berdasarkan berbagai indikator sosial-ekonomi menggunakan algoritma **Random Forest**. Dataset yang digunakan mencakup data dari seluruh wilayah Indonesia, dengan target klasifikasi berupa dua kategori: **Kelas 0 (Tidak Miskin)** dan **Kelas 1 (Miskin)**.
-
-## **Fitur Utama**
-- **Pra-pemrosesan Data**: Membersihkan data, menghapus kolom yang tidak relevan, dan menangani data yang tidak seimbang.
-- **Model Klasifikasi**: Menggunakan algoritma Random Forest untuk membangun model klasifikasi dengan akurasi hingga 98%.
-- **Evaluasi Model**: Mencakup metrik seperti precision, recall, F1-score, serta visualisasi confusion matrix.
-- **Visualisasi Pentingnya Fitur**: Menampilkan tingkat kontribusi setiap fitur dalam menentukan klasifikasi.
-
-## **Struktur Proyek**
-- `data/`: Berisi dataset yang digunakan untuk analisis.
-- `notebooks/`: Visual Studio Code untuk eksplorasi data, pemrosesan, dan pelatihan model.
-- `results/`: Hasil evaluasi dan visualisasi, seperti confusion matrix dan plot pentingnya fitur.
-- `scripts/`: Skrip Python untuk pemrosesan data dan pelatihan model.
-
-## **Teknologi yang Digunakan**
-- **Python Libraries**:
-  - `scikit-learn`: Untuk algoritma Random Forest dan evaluasi model.
-  - `pandas` & `numpy`: Untuk manipulasi dan analisis data.
-  - `matplotlib` & `seaborn`: Untuk visualisasi data.
-- **Visual Studio Code**: Untuk eksperimen dan dokumentasi proses.
-
-## **Cara Menjalankan Proyek**
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/username/klasifikasi-kemiskinan.git
-   ```
-2. Install dependensi:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Jalankan notebook atau skrip Python yang sesuai untuk melatih atau mengevaluasi model.
-
-## **Hasil**
-- Akurasi model: **99.03%**.
-- Model dapat memprediksi tingkat kemiskinan dengan baik, bahkan pada data yang tidak seimbang.
-- Visualisasi pentingnya fitur menunjukkan bahwa indikator seperti **rata-rata lama sekolah** dan **pengeluaran per kapita** memiliki kontribusi besar dalam klasifikasi.
-
-## **DATASET**
-Data set yang digunakan: https://www.kaggle.com/datasets/ermila/klasifikasi-tingkat-kemiskinan-di-indonesia
 
 
+# **Classification of Poverty Levels in Indonesia Using Machine Learning**
+
+## **Project Description**
+This project aims to build the best classification model for predicting poverty levels in Indonesia based on socio-economic and demographic features of each region. The dataset consists of 514 entries representing provinces and districts/cities in Indonesia with 12 features. These features include economic indicators, education levels, health metrics, and other key socio-economic statistics. The data is preprocessed and analyzed to ensure robust model development and evaluation.
+data source:https://www.kaggle.com/datasets/ermila/klasifikasi-tingkat-kemiskinan-di-indonesia
+
+## **Project Goals**
+1. Develop multiple classification models to predict poverty levels in Indonesia.
+2. Evaluate and compare the models based on their accuracy to identify the best-performing model.
+3. Analyze the relationships between socio-economic features and their impact on poverty prediction.
+
+## **Methodology**
+1. **Load Data**: The dataset was imported and cleaned, containing features such as education levels, sanitation access, unemployment rates, and regional economic performance.
+2. **Exploratory Data Analysis (EDA)**: Insights were extracted using descriptive statistics and visualizations, such as heatmaps, to identify patterns and correlations among features.
+3. **Data Preprocessing**:
+   - Missing values were handled by imputing numerical values with the mean and encoding categorical features with LabelEncoder.
+   - Features were standardized using StandardScaler.
+4. **Data Visualization**:
+   - Correlation heatmaps were generated to highlight the relationships between socio-economic features.
+5. **Splitting and Scaling Data**:
+   - The dataset was split into training and test sets (80:20 ratio), ensuring balanced representation.
+6. **Modeling**:
+   - Three classification models were developed: Random Forest, Logistic Regression, and K-Nearest Neighbors (KNN).
+   - The Random Forest model achieved the highest accuracy of **99.03%**.
+7. **Evaluation**:
+   - Classification reports and confusion matrices were generated to assess model performance.
+
+## **Project Key Insights**
+1. The features `P0 Persen` (percentage of poor population) and `Mean Lama Sekolah 15+` (average years of schooling) are highly significant in classifying poverty levels.
+2. Visualizing the dataset through correlation heatmaps reveals strong relationships between poverty and access to education, health metrics, and sanitation.
+3. The Random Forest model demonstrated superior accuracy and generalization ability, making it the most reliable choice for this classification task.
+
+## **Best Model**
+- **Random Forest Classifier**
+  - **Accuracy**: 99.03%
+  - **F1-Score**: 0.99
+  - This model excels in balancing precision and recall, ensuring stable performance for unseen data.
+
+## **Contact**
+If you have suggestions or want to collaborate, feel free to reach out:
+- **Email**: mochhabibibier@gmail.com  
+- **LinkedIn**: https://www.linkedin.com/in/mhabibierobbi12/
