@@ -17,14 +17,12 @@ data source:https://www.kaggle.com/datasets/ermila/klasifikasi-tingkat-kemiskina
 3. **Data Preprocessing**:
    - Missing values were handled by imputing numerical values with the mean and encoding categorical features with LabelEncoder.
    - Features were standardized using StandardScaler.
-4. **Data Visualization**:
-   - Correlation heatmaps were generated to highlight the relationships between socio-economic features.
-5. **Splitting and Scaling Data**:
+4. **Splitting and Scaling Data**:
    - The dataset was split into training and test sets (80:20 ratio), ensuring balanced representation.
-6. **Modeling**:
-   - Three classification models were developed: Random Forest, Logistic Regression, and K-Nearest Neighbors (KNN).
+5. **Modeling**:
+   - Three classification models were developed: Random Forest.
    - The Random Forest model achieved the highest accuracy of **99.03%**.
-7. **Evaluation**:
+6. **Evaluation**:
    - Classification reports and confusion matrices were generated to assess model performance.
 
 ## **Project Key Insights**
